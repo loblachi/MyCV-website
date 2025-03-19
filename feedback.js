@@ -32,7 +32,7 @@ document.getElementById('feedback-form').addEventListener('submit', async (e) =>
       return;
     }
 
-    const response = await fetch('http://localhost:3000/submit-feedback', {
+    const response = await fetch('https://mycv-website-backend.onrender.com/submit-feedback', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
