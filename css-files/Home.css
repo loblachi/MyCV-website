@@ -293,7 +293,11 @@
         transform: scale(1.1);
     }
 
-
+    .site-caution{
+        margin-bottom:.5rem; 
+        color:gray; 
+        font-size: .8rem;
+    }
 
 
     /* MEDIA QUERIES GO HERE //////////////////////////////////////////////////////////////////////////////////*/
