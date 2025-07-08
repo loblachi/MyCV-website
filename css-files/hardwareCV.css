@@ -3,10 +3,105 @@
     padding: 0;
     font-size: 16px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+
+    /* Variables */ 
+    --padding-desktop: 5rem 0rem; 
+    --padding-tablet: 3.5rem 0rem; 
+    --padding-mobile: 2.25rem 0rem; 
+
+    --container1200: 1200px; 
+    --container100:100%;
+}
+body{
+    background-color: grey;
+}
+.nav-bg{
+    background-color: rgb(255, 255, 255);
 }
 .container{
     margin: 0 auto;
     width: 90%;
-    max-width: 1200px;
+    max-width: var(--container1200); 
+}
+.nav-flex{
+    height: 6rem;
+    border: 1px solid white;
+    display: flex;
+    color: gray;
+    flex-direction: row; justify-content: space-between; 
+}
+ul li a{
+    text-decoration: none;
+    color: gray;
+    padding: .75rem 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: .25rem;
+
+    transition: .3s all;
+}
+ul li a:hover{
+    position: relative;
+    bottom: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+ul li{
+    list-style: none;
+    display: flex; justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: .75rem;
+}
+.nav-register-links{
+    display: flex;
+    gap: .5rem;
+    flex-direction: row;
+}
+
+/******************* section 1 *******************/
+.section-1-bg{
+    background-color: silver;
+    padding: var(--padding-desktop); 
+    border: 1px solid blue;
+}
+.section-1-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 0rem 1rem;
+}
+.left-para-div{
+    width: 70%;
+    font-size: 1.25rem;
+    border: 1px solid black;
+    line-height: 1.5rem;
+}
+.left-para-div h4 i{
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 400;
+}
+.left-para-div h3 i{
+    font-weight: 350;
+    font-size: 1.9rem;
+    line-height: 3rem;
+}
+.left-para-div h3{
+    margin-bottom: 1.15rem;
+}
+.left-para-div p{
+    line-height: 1.75rem;
+    font-weight: 300;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+.right-image-div{
+    border: 1px solid black;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
