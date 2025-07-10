@@ -14,11 +14,10 @@
     --container1200: 1200px; 
     --container100:100%;
 }
-body{
-    background-color: grey;
-}
+
 .nav-bg{
     background-color: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .container{
     margin: 0 auto;
@@ -64,19 +63,16 @@ ul li{
 
 /******************* section 1 *******************/
 .section-1-bg{
-    background-color: silver;
     padding: var(--padding-desktop); 
-    border: 1px solid blue;
 }
 .section-1-flex{
     display: flex;
     flex-direction: row;
-    gap: 0rem 1rem;
+    gap: 0rem 3.5rem;
 }
 .left-para-div{
     width: 70%;
     font-size: 1.25rem;
-    border: 1px solid black;
     line-height: 1.5rem;
 }
 .left-para-div h4 i{
@@ -99,9 +95,82 @@ ul li{
     margin-bottom: 1rem;
 }
 .right-image-div{
-    border: 1px solid black;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+.right-image-div img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.side-bar-msg{
+    margin-top: 3rem;
+    height: 12.5rem;
+    border-left: 5px solid rgb(71, 24, 24);
+    background: linear-gradient(to right, rgb(219, 219, 219),  white); 
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+.info-text-side-bar{
+    color: rgb(48, 48, 48);
+    font-style: italic;
+}
+/******************** section 2 begins *************/
+.section-2-bg{
+    padding: 2.5rem 0rem;
+}
+.section-2-flex{
+    display: flex;
+    flex-direction: column;
+}
+.section-2-info h4{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.section-2-info p{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin: 1rem 0rem 4rem 0rem;
+    font-weight: 300;
+}
+.flex-info-div{
+    padding: 2rem .75rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.left-info-div{
+    width: 50%;
+}
+.left-info-div h4{
+    font-size: 1.75rem;
+    font-weight: 350;
+    margin-bottom: 1.25rem;
+}
+.left-info-div p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.right-info-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-height: 20rem;
+}
+.right-info-div img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }
